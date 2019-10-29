@@ -45,10 +45,8 @@ public class Exercises {
 				sum = sum + n;
 			}
 			n++;
-		
 		}
 		System.out.println("sum of odd numbers from 1 to 99 is " + sum);
-		
 	}
 
 	public static void exercise6() {
