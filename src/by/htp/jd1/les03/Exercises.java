@@ -70,7 +70,6 @@ public class Exercises {
 		int b = EnterValue.readIntFromConsole(str2);
 		String str3 = "Enter h";
 		int h = EnterValue.readIntFromConsole(str3);
-		
 		while(a < b){
 			int x = a;
 			if (x > 2) {
@@ -93,7 +92,6 @@ public class Exercises {
 			multiple = i * i;
 			BigInteger value2 = BigInteger.valueOf(multiple);
 			value = value.add(value2);
-			
 		}
 		System.out.println(str + value);
 	}
@@ -144,9 +142,8 @@ public class Exercises {
 		int n = 2;
 		int sum = 0;
 		for (int i = 0; i < 11; i++) {
-					sum = sum + (int)Math.pow(n, i);
-			}
-		
+			sum = sum + (int)Math.pow(n, i);
+		}
 		System.out.println(str + sum);
 	}
 	
@@ -180,15 +177,15 @@ public class Exercises {
 	public static void exercise39() {
 		//39. В трехзначном числе зачеркнули старшую цифру. Когда полученное число умножили
 		//на 7, то получили исходное число. Найти это число.
-			for(int i39 = 100; i39 != 1000; i39++) {
-				int c = i39;
-				int z = c % 10;
-				c = c/10;
-				int y = c % 10;
-				if (i39 == (70 * y + 7 * z)) {
-					System.out.print(i39 + " ");
-				}
+		for(int i39 = 100; i39 != 1000; i39++) {
+			int c = i39;
+			int z = c % 10;
+			c = c/10;
+			int y = c % 10;
+			if (i39 == (70 * y + 7 * z)) {
+				System.out.print(i39 + " ");
 			}
+		}
 	}
 
 }
