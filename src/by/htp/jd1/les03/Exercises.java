@@ -246,6 +246,22 @@ public class Exercises {
 		}
 	}
 	
+	public static void exercise35() {
+		//35. Найдите количество четных цифр данного натурального числа. 
+		String message = "Enter natural number m";
+		int m = EnterValue.readIntFromConsole(message);
+		int sum = 0;
+		int x = 0;
+		while(m > 0) {
+			x = m % 10;
+			m = m /10;
+			if (x % 2 == 0) {
+				sum++;
+			}
+		}
+		System.out.println("There are " + sum + " even numbers ");
+	}
+	
 	public static void exercise39() {
 		//39. В трехзначном числе зачеркнули старшую цифру. Когда полученное число умножили
 		//на 7, то получили исходное число. Найти это число.
