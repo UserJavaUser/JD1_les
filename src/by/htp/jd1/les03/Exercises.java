@@ -161,7 +161,7 @@ public class Exercises {
 		System.out.println(str + value);
 	}
 	
-	public static void excercise17() {
+	public static void exercise17() {
 		//17. Даны действительное (а) и натуральное (n). вычислить: a(a+1)...(a+n-1)
 		String str = "Enter real a";
 		double a = EnterValue.readDoubleFromConsole(str);
@@ -172,6 +172,31 @@ public class Exercises {
 			  value = value * (a + i);
 		  }
 		System.out.println("a (a+1)...(a+n-1) = " + value);
+	}
+	public static void exercise24() {
+		//24.Вводится натуральное число. Найти сумму четных цифр, входящих в его состав.
+		//Преобразовать его в другое число, цифры которого будут следовать в обратном порядке
+		//по сравнению с введенным числом.
+		String message = "Enter natural number";
+		int n = EnterValue.readIntFromConsole(message);
+		int m = 0;
+		int sum = 0;
+		int temp = n;
+		int x = 0;
+		
+		while(n != 0) {
+			x = n % 10;
+			n = n / 10;
+			m = m * 10 + x;
+		}
+		while (temp !=0) {
+			int k = temp % 10;
+			if (k % 2 == 0) {
+				sum = sum + k;
+			}
+			temp = temp / 10;
+		}
+		System.out.println("sum is " + sum + ", m is " + m);
 	}
 	
 	public static void exercise25() {
