@@ -16,7 +16,8 @@ public class Cycles {
 		Exercises.exercise14();
 		Exercises.exercise15();
 		Exercises.exercise16();
-		Exercises.excercise17();
+		Exercises.exercise17();
+		Exercise.exercise24();
 		Exercises.exercise25();
 		Exercises.exercise39();
 	}
