@@ -229,7 +229,23 @@ public class Exercises {
 			System.out.printf("\n");
 		}	
 	}
-
+	
+	public static void exercise34() {
+		//34. Найдите все четырехзначные числа, сумма цифр каждого из которых равна 15.
+		for(int i = 1000 ; i < 10000; i ++) {
+			int temp = i;
+			int sum = 0;
+			while(temp > 0) {
+				int n = temp % 10;
+				temp = temp / 10;
+				sum = sum + n;
+			}
+			if (sum == 15) {
+				System.out.println(i);
+			}
+		}
+	}
+	
 	public static void exercise39() {
 		//39. В трехзначном числе зачеркнули старшую цифру. Когда полученное число умножили
 		//на 7, то получили исходное число. Найти это число.
