@@ -19,7 +19,7 @@ public class Cycles {
 		Exercises.exercise17();
 		Exercise.exercise24();
 		Exercises.exercise25();
-		Exercise.exercise24();
+		Exercise.exercise34();
 		Exercises.exercise39();
 	}
 
