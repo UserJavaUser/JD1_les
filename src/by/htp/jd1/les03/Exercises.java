@@ -210,6 +210,25 @@ public class Exercises {
 		
 		System.out.println(n + "! = " + value);
 	}
+	
+	public static void exercise27() {
+		//27. Для каждого натурального числа в промежутке от m до n вывести все делители,
+		//кроме единицы и самого числа. m и n вводятся с клавиатуры.
+		String message = "Enter natural number m";
+		int m = EnterValue.readIntFromConsole(message);
+		String message2 = "Enter natural number n";
+		int n = EnterValue.readIntFromConsole(message2);
+		while(m != n) {
+			System.out.print(m + ": ");
+			for (int i = 2; i < 10; i ++) {
+				if (m % i == 0) {
+					System.out.print(i + " ");
+				}
+			}
+			m++;
+			System.out.printf("\n");
+		}	
+	}
 
 	public static void exercise39() {
 		//39. В трехзначном числе зачеркнули старшую цифру. Когда полученное число умножили
