@@ -47,6 +47,7 @@ public class Exercises {
 			n++;
 		}
 		System.out.println("sum of odd numbers from 1 to 99 is " + sum);
+		
 	}
 
 	public static void exercise6() {
@@ -68,6 +69,7 @@ public class Exercises {
 		int b = EnterValue.readIntFromConsole(str2);
 		String str3 = "Enter h";
 		int h = EnterValue.readIntFromConsole(str3);
+		
 		while(a < b){
 			int x = a;
 			if (x > 2) {
@@ -81,7 +83,7 @@ public class Exercises {
 		System.out.println();
 	}
 	
-	public static void excercise9() {
+	public static void exercise9() {
 		//9. Найти сумму квадратов первых ста чисел. 
 		String str = "The value of 1 * 1 + 2 * 2 + ... + 100 * 100 is ";
 		BigInteger value = BigInteger.ZERO;
@@ -94,7 +96,7 @@ public class Exercises {
 		System.out.println(str + value);
 	}
 	
-	public static void excercise10() {
+	public static void exercise10() {
 		//10. Составить программу нахождения произведения квадратов первых двухсот чисел. 
 		
 		String str = "The value of (1 * 1) * (2 * 2) * ... * (200 * 200) is ";
@@ -105,7 +107,7 @@ public class Exercises {
 		System.out.println(str + value.multiply(value));
 	}
 	
-	public static void excercise11() {
+	public static void exercise11() {
 		//11. Составить программу нахождения разности кубов первых двухсот чисел 
 		 
 		String str = "The value of (200 * 200 * 200) - (199 * 199 * 199) - ... - (1 * 1 * 1) is ";
@@ -120,7 +122,7 @@ public class Exercises {
 		System.out.println(str + value);
 	}
 	
-	public static void excercise14() {
+	public static void exercise14() {
 		//14. Дано натуральное n. вычислить: 1 + 1/2 + 1/3 + 1/4 + ... + 1/n.
 		String str = "Enter n > 0";
 		int n = EnterValue.readIntFromConsole(str);
@@ -134,7 +136,7 @@ public class Exercises {
 		System.out.println("sum = " + sum);
 	}
 	
-	public static void excercise15() {
+	public static void exercise15() {
 		//15. Вычислить : 1+2+4+8+...+ 2 в 10 степени. 
 		String str = "Two ten times is ";
 		int n = 2;
@@ -142,10 +144,11 @@ public class Exercises {
 		for (int i = 0; i < 11; i++) {
 			sum = sum + (int)Math.pow(n, i);
 		}
+		
 		System.out.println(str + sum);
 	}
 	
-	public static void excercise16() {
+	public static void exercise16() {
 		//16. Вычислить: (1+2)*(1+2+3)*...*(1+2+...+10).
 		String str = "The value (1+2)*(1+2+3)*...*(1+2+...+10) is ";
 		BigInteger value = BigInteger.ONE;
@@ -171,19 +174,30 @@ public class Exercises {
 		System.out.println("a (a+1)...(a+n-1) = " + value);
 	}
 	
+	public static void exercise25() {
+		//25. Требуется определить факториал числа, которое ввел пользователь.
+		String message = "Введите число";
+		int n = EnterValue.readIntFromConsole(message);
+		BigInteger value = BigInteger.ONE;
+		for (int i = 1; i < n + 1; i++) {
+			value = value.multiply(BigInteger.valueOf(i));
+		}
+		
+		System.out.println(n + "! = " + value);
+	}
 
 	public static void exercise39() {
 		//39. В трехзначном числе зачеркнули старшую цифру. Когда полученное число умножили
 		//на 7, то получили исходное число. Найти это число.
-		for(int i39 = 100; i39 != 1000; i39++) {
-			int c = i39;
-			int z = c % 10;
-			c = c/10;
-			int y = c % 10;
-			if (i39 == (70 * y + 7 * z)) {
-				System.out.print(i39 + " ");
+			for(int i39 = 100; i39 != 1000; i39++) {
+				int c = i39;
+				int z = c % 10;
+				c = c/10;
+				int y = c % 10;
+				if (i39 == (70 * y + 7 * z)) {
+					System.out.print(i39 + " ");
+				}
 			}
-		}
 	}
 
 }
