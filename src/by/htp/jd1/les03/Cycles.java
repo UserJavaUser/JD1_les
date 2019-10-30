@@ -10,12 +10,14 @@ public class Cycles {
 		Exercises.exercise5();
 		Exercises.exercise6();
 		Exercises.exercise7();
-		Exercises.excercise9();
-		Exercises.excercise10();
-		Exercises.excercise11();
-		Exercises.excercise15();
-		Exercises.excercise16();
+		Exercises.exercise9();
+		Exercises.exercise10();
+		Exercises.exercise11();
+		Exercises.exercise14();
+		Exercises.exercise15();
+		Exercises.exercise16();
 		Exercises.excercise17();
+		Exercises.exercise25();
 		Exercises.exercise39();
 	}
 
