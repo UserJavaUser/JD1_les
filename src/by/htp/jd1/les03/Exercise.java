@@ -1,7 +1,7 @@
 package by.htp.jd1.les03;
 import java.math.BigInteger;
 
-public class Exercises {
+public class Exercise {
 	public static void exercise1() {
 		//1. Необходимо вывести на экран числа от 1 до 5.
 		for(int i = 1; i < 6; i++) {
