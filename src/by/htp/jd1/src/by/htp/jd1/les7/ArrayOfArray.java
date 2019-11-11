@@ -1,6 +1,6 @@
 package by.htp.jd1.les7;
 
-public class ArraysOfArrays {
+public class ArrayOfArray {
 	public static void main(String[] args) {
 		Exercise1.exercise1();
 		Exercise2.exercise2();
