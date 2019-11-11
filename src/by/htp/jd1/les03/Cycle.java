@@ -1,6 +1,6 @@
 package by.htp.jd1.les03;
 
-public class Cycles {
+public class Cycle {
 
 	public static void main(String[] args) {
 		Exercises.exercise1();
