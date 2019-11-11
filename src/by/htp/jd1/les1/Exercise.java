@@ -2,7 +2,7 @@ package by.htp.jd1.les1;
 import java.math.BigInteger;
 import java.util.Random;
 
-public class Exercises {
+public class Exercise {
 	public static void exercise1(){
 		// 1. Даны два действительных числа х и  у. 
 		//Вычислить их сумму, разность, произведение и частное. 
