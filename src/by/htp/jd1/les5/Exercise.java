@@ -1,6 +1,6 @@
 package by.htp.jd1.les5;
 
-public class Exercises {
+public class Exercise {
 	public static void exercise1() {
 		//1. В массив A [N] занесены натуральные числа. Найти сумму тех элементов, которые кратны
 		//данному К.
